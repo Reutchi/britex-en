@@ -1,1 +1,0 @@
-import {noPage} from '../assets/404.jpg

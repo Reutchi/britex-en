@@ -1,8 +1,9 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from './components/Header';
-import {Home} from './../src/Views/Home'
-import { Skills } from './Views/Skills';
+import {Home} from './../src/views/Home'
+import { Skills } from './views/Skills';
+
 function App() { 
   return (
     <BrowserRouter>
