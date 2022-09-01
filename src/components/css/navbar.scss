@@ -1,0 +1,60 @@
+.NavBarItems{
+    @media only screen and (min-width: 0) {
+      .ListItems ul{
+      }
+      .ListItems {
+        display: none;
+      }
+      .BtnTalk{
+        display: none;
+      }
+      .MenuIcon{ 
+        position: fixed;
+        top: 25px;
+        right: 15px;
+        cursor: pointer;
+       }
+    }
+    
+    @media only screen and  (min-width: 575px){
+     
+    }
+    
+    @media only screen and (min-width: 767px) {
+          
+    }
+    
+    @media only screen and (min-width: 1200px ) {
+        .MenuIcon{
+            display: none;
+        }
+        .ListItems{
+            display: flex;
+        }
+        .BtnTalk{
+            display: inline;
+        }
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+        }
+        li{
+            list-style: none;
+            margin-right: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: #263238;
+        }
+        .BtnTalk{
+            margin: 10px 10px 0 0;
+            width: 150px;
+            height: 50px;
+            background-color: transparent;
+            cursor: pointer;
+            
+        }
+    }
+}
+
