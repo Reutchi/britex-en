@@ -1,12 +1,11 @@
-@import '../../styles//vars.scss';
+@import '../../styles/vars.scss';
 
-.btn{
-    background-color: $oxford-blue;
-    border: none;
-    padding: 18px 99px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 5px;
-    
+.btn {
+	background-color: $oxford-blue;
+	border: none;
+	padding: 14px 99px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border-radius: 5px;
 }

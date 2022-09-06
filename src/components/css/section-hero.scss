@@ -1,112 +1,104 @@
-@import '../../styles//vars.scss';
+@import '../../styles/vars.scss';
 
-.HeroSection{  
-      @media only screen and (min-width: 0) {
-     figure {
-      text-align: center;
-        .lamp{
-          display: none;
-        }
-        img{
-          max-width: 299px;
-        }
-     }
-     h1{
-      font-size: 24px;
-      text-align: center;
-      font-weight: 600;
-     } 
-     p{
-      font-size: 14px;
-      font-weight: 400;
-      text-align: center;
-      color: $ligth-gray;
-
-     
-    }
-    .wrapperButton{
-      text-align: center;
-    }
-      }  
-      @media only screen and  (min-width: 575px){
-        figure{
-          .lamp{
-            display: none;
-          }
-          img{
-            max-width: 424px;
-          }
-        }
-        .wrapperButton{
-          text-align: center;
-        }
-
-        
-      }   
-      @media only screen and (min-width: 767px) {
-        figure{
-          float: right;
-          img{
-            max-width: 352px;
-          }
-          .lamp{
-            position: absolute;
-            left:auto;
-            display: inline;
-            left: 230px;
-            top: 140px;
-          }
-        }
-        .content{
-          padding-top: 30px;
-          margin-left: 35px;
-          h1{
-            width: 200px;
-            text-align: inherit;
-            font-size: 36px;
-          }
-          p{
-            width: 320px;
-            text-align: inherit;
-            font-size: 14px;
-          }
-        }
-        .wrapperButton{
-          text-align: left;
-        }
-       
-      }
-      @media only screen and (min-width: 1200px ) {
-        margin: 0 auto;
-        width: 1000;
-          figure{
-            .hero{
-              // height: 661px;
-              max-width: 661px;
-            }
-            .lamp{
-                position: absolute;
-                left:auto;
-                display: inline;
-                left: 400px;
-                top: 250px;
-            }
-          }
-          .content{
-
-            h1{
-              padding-top: 30px;
-              width: 386px;
-              font-size: 64px;
-              line-height: 80px;
-            }
-            p{
-              width: 632px;
-              font-size: 24px;
-              line-height: 36px;
-            }
-          }
-         
-          
-      }
+.HeroSection {
+	@media only screen and (min-width: 0) {
+		figure {
+			text-align: center;
+			.lamp {
+				display: none;
+			}
+			img {
+				max-width: 299px;
+			}
+		}
+		h1 {
+			font-size: 24px;
+			text-align: center;
+			font-weight: 600;
+		}
+		p {
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+			color: $light-gray;
+		}
+		.wrapperButton {
+			text-align: center;
+		}
+	}
+	@media only screen and (min-width: 575px) {
+		figure {
+			.lamp {
+				display: none;
+			}
+			img {
+				max-width: 424px;
+			}
+		}
+		.wrapperButton {
+			text-align: center;
+		}
+	}
+	@media only screen and (min-width: 767px) {
+		figure {
+			float: right;
+			img {
+				max-width: 352px;
+			}
+			.lamp {
+				position: absolute;
+				left: auto;
+				display: inline;
+				left: 230px;
+				top: 140px;
+			}
+		}
+		.content {
+			padding-top: 30px;
+			margin-left: 35px;
+			h1 {
+				width: 200px;
+				text-align: inherit;
+				font-size: 36px;
+			}
+			p {
+				width: 320px;
+				text-align: inherit;
+				font-size: 14px;
+			}
+		}
+		.wrapperButton {
+			text-align: left;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		margin: 0 auto;
+		width: 1000;
+		figure {
+			.hero {
+				// height: 661px;
+				max-width: 661px;
+			}
+			.lamp {
+				position: absolute;
+				left: auto;
+				display: inline;
+				left: 400px;
+				top: 250px;
+			}
+		}
+		.content {
+			h1 {
+				padding-top: 30px;
+				width: 386px;
+				font-size: 64px;
+				line-height: 80px;
+			}
+			p {
+				width: 632px;
+				font-size: 24px;
+				line-height: 36px;
+			}
+		}
+	}
 }

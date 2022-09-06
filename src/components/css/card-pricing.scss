@@ -1,0 +1,62 @@
+@import '../../styles/vars.scss';
+
+.CardPricing {
+	@media only screen and (min-width: 0) {
+		margin-top: 90px;
+		> h4 {
+			text-align: center;
+			font-size: 24px;
+			line-height: 80px;
+			font-weight: 600;
+		}
+		.wrapper-cards {
+			width: 275px;
+			margin: 0 auto;
+			.CardItem {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-top: 50px;
+				> span {
+					color: $oxford-blue;
+					font-weight: 600;
+					font-size: 18px;
+					line-height: 28px;
+				}
+				> p {
+					font-weight: 400;
+					font-size: 13px;
+					line-height: 20px;
+					color: $light-gray;
+					text-align: center;
+				}
+				> button {
+					border: none;
+					background-color: $gray;
+					padding: 15px 30px;
+					font-size: 18px;
+					> span {
+						color: $trans-blue;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 575px) {
+		.wrapper-cards {
+			width: 400px;
+			.CardItem {
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 767px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
+}

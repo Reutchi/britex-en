@@ -1,0 +1,52 @@
+@import '../../styles/vars.scss';
+
+.Footer {
+	@media only screen and (min-width: 0) {
+		width: 355px;
+		margin: 0 auto;
+		> hr {
+			margin-top: 150px;
+		}
+		.wrapper-footer {
+			margin-top: 60px;
+			padding-bottom: 35px;
+			text-align: center;
+			> figure {
+				margin-top: 25px;
+			}
+			> ul {
+				display: flex;
+				list-style-type: none;
+				> li {
+					> a {
+						font-size: 11px;
+						text-decoration: none;
+						color: $light-gray;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 575px) {
+		width: 550px;
+		margin: 0 auto;
+		.wrapper-footer {
+			display: flex;
+			justify-content: space-between;
+			> ul {
+				li > {
+					a {
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 767px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
+}

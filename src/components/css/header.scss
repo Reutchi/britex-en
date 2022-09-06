@@ -1,20 +1,25 @@
-.Header{
-   @media only screen and (min-width: 0) {
-     
-   }
+.Header {
+	@media only screen and (min-width: 0) {
+		width: 300px;
+		margin: 0 auto;
+	}
 
-   @media only screen and  (min-width: 575px){
-    
-   }
+	@media only screen and (min-width: 575px) {
+		width: 500px;
+		margin: 0 auto;
+	}
 
-   @media only screen and (min-width: 767px) {
-    
-   }
+	@media only screen and (min-width: 767px) {
+		width: 700px;
+		margin: 0 auto;
+	}
+	@media only screen and (min-width: 992px) {
+		width: 900px;
+		margin: 0 auto;
+	}
 
-   @media only screen and (min-width: 1600px ) {
-      margin: 0 auto;
-      width: 1365px;
-   }
+	@media only screen and (min-width: 1400px) {
+		width: 1350px;
+		margin: 0 auto;
+	}
 }
-
-

@@ -1,0 +1,57 @@
+@import '../../styles/vars.scss';
+
+.AboutUs {
+	@media only screen and (min-width: 0) {
+		text-align: center;
+		> h4 {
+			margin-top: 50px;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 80px;
+		}
+		> p {
+			padding: 5px 5px;
+			font-size: 13px;
+			line-height: 20px;
+			font-weight: 400;
+			color: $light-gray;
+		}
+		.wrapper-info-cards {
+			> .InfoCards {
+				padding-top: 30px;
+				> .value {
+					font-size: 24px;
+					font-weight: 600;
+					line-height: 80px;
+					color: $light-blue;
+				}
+				> .type {
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 22px;
+					color: $light-gray;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 575px) {
+		width: 510px;
+		margin: 0 auto;
+		.wrapper-info-cards {
+			display: flex;
+			justify-content: space-between;
+			.InfoCards {
+				> .value {
+					line-height: 10px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: 767px) {
+	}
+
+	@media only screen and (min-width: 1200px) {
+	}
+}
