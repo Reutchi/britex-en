@@ -63,28 +63,50 @@
 
 	@media only screen and (min-width: 1200px) {
 		.wrapper-card {
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			max-height: 1250px;
+
+			.cardItem {
+				background-color: $white-smoke;
+				border-radius: 10px;
+				padding: 45px 40px;
+				height: initial;
+				width: initial;
+			}
 			.a {
-				height: 894px;
-				width: 435px;
+				grid-row-start: 2;
+				grid-column-start: 2;
+
+				grid-row-end: 5;
+				grid-column-end: 3;
 			}
 			.b {
-				height: 531px;
-				width: 434px;
+				grid-row-start: 4;
+				grid-column-start: 3;
+
+				grid-row-end: 5;
+				grid-column-end: 5;
+				> figure {
+					> img {
+						float: right;
+					}
+				}
 			}
 			.c {
-				height: 531px;
-				width: 434px;
+				grid-row-start: 2;
+				grid-column-start: 3;
+
+				grid-row-end: 4;
+				grid-column-end: 4;
 			}
 			.d {
-				float: left;
-				width: 905px;
-				height: 343px;
-				margin-left: 502px;
-				margin-top: -343px;
-				img {
-					padding-top: 100px;
-					float: right;
-				}
+				grid-row-start: 2;
+				grid-column-start: 4;
+
+				grid-row-end: 4;
+				grid-column-end: 5;
 			}
 		}
 	}

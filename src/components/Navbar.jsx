@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from '../assets/Logo.svg'
 import './css/navbar.scss'
 import Hamburger from './Hamburger'
@@ -32,10 +32,12 @@ const MenuItem = [
 ]
 
 export const Navbar = function () {
-	const [hamburgerOpen, setHamburgerOpen] = useState(false)
-	const toggleHamburger = () => {
-		setHamburgerOpen(!hamburgerOpen)
-	}
+	React.useEffect(() => {
+		const menuWrap = document.querySelector('.bm-menu-wrap')
+		if (menuWrap) {
+			menuWrap.setAttribute('aria-hidden', true)
+		}
+	}, [])
 
 	return (
 		<div className='NavBarItems'>
@@ -53,9 +55,7 @@ export const Navbar = function () {
 					)
 				})}
 			</ul>
-			<div className={`MenuIcon`} onClick={toggleHamburger}>
-				<Hamburger />
-			</div>
+			<Hamburger />
 			<button className='BtnTalk'>Let's Talks</button>
 		</div>
 	)

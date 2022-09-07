@@ -1,16 +1,28 @@
 import React from 'react'
-import './css/hamburger.scss';
+import { slide as Menu } from 'react-burger-menu'
+import '../components/css/hamburger.scss'
 
-function Hamburger() {
-  return (
-    <>
-        <div className='hamburger'>
-            <div className='burger burger 1'></div>
-            <div className='burger burger 2'></div>
-            <div className='burger burger 3'></div>
-        </div>
-    </>
-  )
+const toggleMenu = ({ isOpen }) => {
+	const menuWrap = document.querySelector('.bm-menu-wrap')
+	isOpen
+		? menuWrap.setAttribute('aria-hidden', false)
+		: menuWrap.setAttribute('aria-hidden', true)
+}
+
+const Hamburger = () => {
+	return (
+		<Menu noOverlay onStateChange={toggleMenu}>
+			<a className='menu-item' href='/'>
+				Home
+			</a>
+			<a className='menu-item' href='/about'>
+				About
+			</a>
+			<a className='menu-item' href='/contact'>
+				Contact
+			</a>
+		</Menu>
+	)
 }
 
 export default Hamburger

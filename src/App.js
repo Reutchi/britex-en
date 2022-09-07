@@ -1,7 +1,7 @@
 import './App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Header } from './components/Header'
-import { Home } from './../src/views/Home'
+import { Home } from './views/Home'
 import { Skills } from './views/Skills'
 import Footer from './components/Footer'
 
