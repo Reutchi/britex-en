@@ -3,6 +3,20 @@ import logo from '../assets/Logo.svg'
 import './css/footer.scss'
 
 const Footer = () => {
+	const infoFooter = [
+		{
+			title: 'Terms and Conditions',
+			link: '/terms'
+		},
+		{
+			title: 'Privacy Policy',
+			link: '/privacy'
+		},
+		{
+			title: 'Cookie Policy<',
+			link: '/policy'
+		}
+	]
 	return (
 		<div className='Footer'>
 			<hr />
@@ -11,15 +25,13 @@ const Footer = () => {
 					<img src={logo} alt='logo' />
 				</figure>
 				<ul>
-					<li>
-						<a href=''>Terms and Conditions</a>
-					</li>
-					<li>
-						<a href=''>Privacy Policy</a>
-					</li>
-					<li>
-						<a href=''>Cookie Policy</a>
-					</li>
+					{infoFooter.map((item, index) => {
+						return (
+							<li key={index}>
+								<a href={item.link}>{item.title}</a>
+							</li>
+						)
+					})}
 				</ul>
 			</div>
 		</div>
